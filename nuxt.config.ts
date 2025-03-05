@@ -13,11 +13,6 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@vueuse/nuxt",
   ],
-  ssr: false,
-  target: "static",
-  generate: {
-    fallback: true
-  },
   colorMode: {
     classSuffix: "",
     preference: "system",
