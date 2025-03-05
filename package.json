@@ -3,17 +3,17 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
+    "build": "bun x prisma generate && nuxt build",
     "dev": "nuxt dev",
     "generate": "bun x prisma generate && nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "cleanup": "nuxt cleanup",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx",
-    "db:generate": "prisma generate",
-    "db:migrate": "prisma migrate dev",
-    "db:studio": "prisma studio",
-    "db:push": "prisma db push",
+    "db:generate": "bun x prisma generate",
+    "db:migrate": "bun x prisma migrate dev",
+    "db:studio": "bun x prisma studio",
+    "db:push": "bun x prisma db push",
     "db:seed": "bun x prisma db seed"
   },
   "prisma": {
