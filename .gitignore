@@ -4,7 +4,8 @@
 .nuxt
 .nitro
 .cache
-dist
+# dist
+# Nuxt generate
 
 # Node dependencies
 node_modules
